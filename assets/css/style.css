@@ -1,310 +1,337 @@
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777777;
+  background: #4aaaa5;
+  background-image: url("../../../Responsive-Portfolio/assets/images/another.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-
-  body {
-    font-family: 'Times New Roman', Times, serif; 
-    font-size: 14px;
-    line-height: 2;
-    color:black;
-    background: #4aaaa5;
-    background-image: url("../images/dark-paths.png"); 
-  }
-
-  * {
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  .container {
-    width: 100%;
-   
-  }
-  #trivia-block {
-    font-family: 'Times New Roman', Times, serif; 
-    width: 95%;
-    max-width: 960px; 
-    top: 125px;}   
+body {
+  margin: 8px;
+}
   
-  #yankee-input{
-    color: navy;
-  }
+* {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
 
-  #yankee-form {
-    color: navy;
-    font-size: 16px;
-  }
+.container {
+  width: 100%;
+  clear: both;        
+}
     
-   #main-container {
-    padding-top: 80px;
+#main-container {
+  padding-top: 80px;
+  height: 100%;
+  margin-bottom: 60px;
+} 
+  
+#button-block {
+  font-family: 'Times New Roman', Times, serif; 
+  width: 95%;
+  max-width: 960px; 
+  top: 125px
+}   
+  
+#yankee-input{
+  color: navy;
+}
+
+#yankee-form {
+  color: navy;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+#gifs-appear-here {
+  color: navy;
+  font-size: 14px;
+  width: 95%;
+}
+
+.main-section {
+  text-align: left;
+  overflow: auto;
+  padding: 20px;
+  background-color: #043634;
+  border-color: #dddddd;
+  border: 1px solid;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 960px; 
+  margin-left: auto;
+  margin-right: auto; 
+  opacity: 0.9;
+}
+  
+
+header {
+  position:fixed;
+  width: 100%;
+  margin: -10px -10px 40px;
+  background: #ffffff;
+  border-color: #cccccc;
+  border-bottom:  2px  solid;
+  z-index: 99;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+  margin-left: 10px;
+}
+
+nav {
+  float: right;
+  padding-top: 30px;
+  font-size: 24px;
+  height: 80px;
+}  
+
+nav a:hover:not(.active) {
+  background-color: #4aaaa5;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #043634;
+  opacity: 0.9;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  padding: 0px 15px;      
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  border-right: 1px  solid #bbb;
+  border-radius: 0px;   
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+} 
+  
+h2 {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  color: #4aaaa5;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  padding: 0px 15px;      
+}
+      
+div {
+  margin: auto;
+}   
+      
+hr {
+  border: 1px solid #777777;
+  border-radius: 10px;
+}
+
+.gif-div {
+  display: inline-grid;
+  margin-inline-end: 20px;
+  grid-auto-columns: 415px;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  padding-bottom: 5px;
+}
+  
+#game {
+  background-color: white;
+  background-image: url("../images/blue.jpg");
+  background-size: auto;
+  margin-top: 20px;
+  max-width: 960px; 
+  top: 125px;
+}
+
+#game h3 {
+  font-size: 20px;
+  color:navy;
+}
     
-  } 
-  #gifs-appear-here {
-    color: navy;
-    font-size: 14px;
-    width: 95%;
+img {
+  border: 0 none;
+  opacity: 0.8;
+  width: 100%;
+  max-height: 233px;
+ }
+  
+button {
+  background-color: navy;
+  color: white;
+  border-color: red;
+  padding: 5px;
+  margin: 5px; 
+}
+
+button:hover {
+  background-color: darkslateblue
+}
+
+#add-yankee {
+  background-color: navy;
+  color: white;
+  border-color: red;
+  padding: 5px;
+  margin: 5px; 
+}
+
+#add-yankee:hover {
+  background-color: darkslateblue
+}
+
+footer {
+  background-color: #666666;
+  position: fixed;
+  width: 100%;
+  border-top: 8px solid #4aaaa5;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  height: 50px;
+}
+
+footer p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+  
+@media screen and (max-width: 980px) {
+
+  .header {
+    width: 980px;
   }
 
   .main-section {
-    text-align: left;
-    
-    padding: 20px;
-    background-image: url("../images/background.jpg");
-    border-color: #dddddd;
-    border: 1px solid;
-    margin-top: 40px;
-    margin-bottom: 90px;
+    width: 55%;
+    margin-left: 30px
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    width: 768px;
+  }
+
+  .main-section {
     width: 100%;
-    max-width: 960px;   
-    margin-left: auto;
-    margin-right: auto; 
-    position: relative;
-    height: 100%;
-   
+    margin-left: 0px
+  } 
+}
+
+@media screen and (max-width: 640px) {
+     
+  header {
+    position: static;
+    width: 640px; 
   }
   
-  header {
-    position:fixed;
-    width: 100%;
-    margin: -10px 0 30px;
-    overflow:auto;
-    background: #ffffff;
-    border-color: #cccccc;
-    border-bottom:  2px  solid;
-    z-index: 99;
-    
-  }
-
   #logo {
-    float: left;
-    width: 250px;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    background: #4aaaa5;
-    margin-left: 20px;
+    width: 100%;
+    margin-left: 0px;
+    clear: both; 
   }
 
-  nav {
-    float: right;
-    margin-top: 10px;
-    font-size: 24px;
-    height: 80px;
+  nav { 
+    margin-left: 0px;
+    clear: both; 
+    float: none;   
+    text-align: center;          
   }  
 
-  nav a {
-    text-decoration: none;
-    color: #777777;
+  .dropdown {
+    float: none;
+    display: inline;
   }
 
-  nav a:hover:not(.active) {
-    background-color: #4aaaa5;
-  }
-
-  .links {
-    display: inline-block;
-    border-right: 1px  solid #bbb;
-    padding: 0px 15px;      
-    border-radius: 0px;    
-    margin-top: 15px; 
+  #main-container {
+    padding-top: 0px;
   } 
-
-  #links-last-child {
-    display: inline-block;
-    padding: 0px 15px;         
-    border-right: 0 none;
-  }
-
-  
-   h2
-  {
-    font-size: 20px;
-    color:navy;
-  }
-
-  h1 {
-    font-family: Georgia, Times, "Times New Roman", serif;
-   font-weight: 700;
-   color: #4aaaa5;
-    font-size: 24px;
-    margin: -20px;
-    background-color: white;
+    
+  .main-section {
     width: 100%;
-    max-width: 960px; 
-    height: 50px;
-    line-height: 50px;
-    position: absolute;
-    
-    text-indent: 20px;
-    
-    top: 0%;
+    margin-left: 0px
+  }
 
+  .gif-div {
+    grid-auto-columns: 552px; 
+  }
+
+  img {  
+    max-height: 310px;
   }   
-      
-   div {
-       margin: auto;
-      }   
-      
-  hr {
-    border: 1px solid #777777;
-    border-radius: 10px;
-    background-color: white;
-    top: 20px;
-    position: absolute;
-    max-width: 960px; 
-    width: 95%;
-    height: 2px;
-  }
-  
-  #game {
-    background-color: white;
-    margin-top: 5px;
-    padding: 20px;
-    width: 95%;
-    max-width: 960px; 
-    top: 125px;}
-
-    #game h3 {
-    font-size: 20px;
-    color:navy;
-    }
-    
-   img {
-    width: 50%;
-    border: 0 none;
-    opacity: 0.8;
-   }
-  
-  button {
-      background-color: navy;
-      color: white;
-      border-color: red;
-      padding: 5px;
-      margin: 5px; 
-  }
-
-  button:hover {
-    background-color: darkslateblue
-  }
-
-  #add-yankee {
-    background-color: navy;
-    color: white;
-    border-color: red;
-    padding: 5px;
-    margin: 5px; 
-  }
-
-  #add-yankee:hover {
-    background-color: darkslateblue
-  }
-
-footer {
-      background-color: #666666;
-      position: fixed;
-      width: 100%;
-      border-top: 8px solid #4aaaa5;
-      left: 0;
-      bottom: 0;
-      color: white;
-      text-align: center;
-      font-size: 12px;
-      height: 50px;
-      line-height: 3;
-  }
-  
-  .row {
-    width: 100%;
-    overflow: auto; 
-    clear: both;
-    display: inline-block; 
-  }
-
-  .column-1 {
-    float: left;
-    width: 50%;
-    margin: auto;
-    padding: 0 10px 0 0;
-
-  }
-  .column-2 {
-    float: right;
-    width: 50%;
-    padding: 0 0 0 10px;
-
-  }
-
-  
-
- @media screen and (max-width: 980px) {
-   .header {
-     width: 980px;
-   }
-   .main-section {
-     width: 55%;
-     margin-left: 30px
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .main-section {
-        width: 100%;
-        margin-left: 0px
-      }
-      #bio-image {
-        width: 50%;
-    }
-  }
-
-   @media screen and (max-width: 640px) {
-     
-    #main-container {
-      padding-top: 0px;
-    } 
-    
-    header {
-        position: static;
-        width: 640px;
-        width: 100%;   
-      }
-
-      #logo {
-        width: 100%;
-        margin-left: 0px;
-        clear: both; 
-      }
-
-      nav {
-        margin: auto;
-        width: 100%;
-        text-align: center;          
-      }  
-
-      .main-section {
-        width: 100%;
-        margin-left: 0px
-      }
-
-      #bio-image {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-    .column-1 {
-        width: 100%;
-        padding: 0 0 0 0;
-
-      }
-      .column-2 {
-        width: 100%;
-        padding: 0 0 0 0;
-
-      }
-        
-      }
-
-
-
-    }
+}

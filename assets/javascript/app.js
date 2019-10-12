@@ -3,13 +3,19 @@ var topics = {
 }
 // This function handles events where one button is clicked
 $("#add-yankee").on("click", function (event) {
-  // event.preventDefault() prevents the form from trying to submit itself.
   event.preventDefault();
   // This line will grab the text from the input box
   var newYankee = $("#yankee-input").val().trim();
+  var newerYankee = capitalize(newYankee)
+  function capitalize(newYankee) {
+    newYankee = newYankee.split(" ");
+    for (var i = 0, x = newYankee.length; i < x; i++) {
+      newYankee[i] = newYankee[i][0].toUpperCase() + newYankee[i].substr(1);
+    }
+    return newYankee.join(" ");
+  }
   $("#yankee-input").val("");
-  topics.Yankees.push(newYankee);
-  console.log(topics.Yankees)
+  topics.Yankees.push(newerYankee);
   renderTopic();
 });
 function renderTopic() {
@@ -43,12 +49,12 @@ function renderTopic() {
           if ((results[i].username === "mlb") || (results[i].username === "yankees") || (results[i].source_tld === "www.pinstripealley.com")) {
             // limit our subject-appropriate gifs to 10
             goodArray.push(results[i])
-            console.log(goodArray)
             if (goodArray.length === 11) {
               break;
             } else {
               // Creating a div for the gif
               var gifDiv = $("<div>");
+              gifDiv.addClass("gif-div")
               // Creating an image tag
               var yankeeImage = $("<img>");
               yankeeImage.addClass("yankee-image");
@@ -65,18 +71,15 @@ function renderTopic() {
               var p = $("<p>").text("Rating: " + rating.toUpperCase());
               // Appending the paragraph and personImage we created to the "gifDiv" div we created
               gifDiv.append(yankeeImage);
+              gifDiv.append("<br>");
               gifDiv.append(p);
               // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
               $("#gifs-appear-here").prepend(gifDiv);
-              console.log(gifDiv)
-              console.log(i)
-              console.log(results[i].images);
             }
           }
         }
         $(".yankee-image").on("click", function () {
           var state = ($(this).attr("data-state"));
-          console.log($(this).attr("data-state"))
           if (state === "still") {
             $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
