@@ -22,6 +22,7 @@ function renderTopic() {
   $("#buttons").empty();
   for (var i = 0; i < topics.Yankees.length; i++) {
     var yankeeBtn = $("<button>");
+    yankeeBtn.addClass("yankee-button");
     yankeeBtn.attr("data-yankee", topics.Yankees[i]);
     yankeeBtn.text(topics.Yankees[i]);
     $("#buttons").append(yankeeBtn)

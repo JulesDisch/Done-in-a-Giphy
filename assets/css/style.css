@@ -29,30 +29,6 @@ body {
   margin-bottom: 60px;
 } 
   
-#button-block {
-  font-family: 'Times New Roman', Times, serif; 
-  width: 95%;
-  max-width: 960px; 
-  top: 125px
-}   
-  
-#yankee-input{
-  color: navy;
-}
-
-#yankee-form {
-  color: navy;
-  font-size: 16px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-} 
-
-#gifs-appear-here {
-  color: navy;
-  font-size: 14px;
-  width: 95%;
-}
-
 .main-section {
   text-align: left;
   overflow: auto;
@@ -74,10 +50,11 @@ header {
   position:fixed;
   width: 100%;
   margin: -10px -10px 40px;
-  background: #ffffff;
+  background-color: #043634;
   border-color: #cccccc;
   border-bottom:  2px  solid;
   z-index: 99;
+  opacity: 0.9;
 }
 
 #logo {
@@ -106,12 +83,6 @@ nav a:hover:not(.active) {
   background-color: #4aaaa5;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #043634;
-  opacity: 0.9;
-}
-
 .navbar a {
   font-size: 16px;
   color: white;
@@ -121,38 +92,42 @@ nav a:hover:not(.active) {
   padding: 0px 15px;      
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
+.dropbtn {
+  color: white;
   font-size: 16px;
   border: none;
+  cursor: pointer;
   border-right: 1px  solid #bbb;
   border-radius: 0px;   
   outline: none;
-  color: white;
   background-color: inherit;
   font-family: inherit; 
   margin: 0; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+  width: 100%;
+  overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 12px 10px;
   text-decoration: none;
   display: block;
-  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
 }
 
 .dropdown:hover .dropdown-content {
@@ -184,8 +159,7 @@ a {
   color: #4aaaa5;
   text-align: center;
   text-decoration: none;
-  display: inline;
-  padding: 0px 15px;      
+  display: inline;    
 }
       
 div {
@@ -195,6 +169,30 @@ div {
 hr {
   border: 1px solid #777777;
   border-radius: 10px;
+}
+
+#button-block {
+  font-family: 'Times New Roman', Times, serif; 
+  width: 95%;
+  max-width: 960px; 
+  top: 125px
+}   
+  
+#yankee-input{
+  color: navy;
+}
+
+#yankee-form {
+  color: navy;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+#gifs-appear-here {
+  color: navy;
+  font-size: 14px;
+  width: 95%;
 }
 
 .gif-div {
@@ -235,7 +233,7 @@ button {
   margin: 5px; 
 }
 
-button:hover {
+.yankee-button:hover {
   background-color: darkslateblue
 }
 
@@ -269,35 +267,18 @@ footer p {
   margin-bottom: 12px;
 }
   
-@media screen and (max-width: 980px) {
-
-  .header {
-    width: 980px;
-  }
-
-  .main-section {
-    width: 55%;
-    margin-left: 30px
-  }
-}
-
 @media screen and (max-width: 768px) {
-
-  .header {
-    width: 768px;
-  }
-
   .main-section {
     width: 100%;
     margin-left: 0px
   } 
 }
 
-@media screen and (max-width: 640px) {
-     
+@media screen and (max-width: 640px) { 
   header {
     position: static;
     width: 640px; 
+    margin-bottom: 10px;
   }
   
   #logo {
@@ -313,13 +294,12 @@ footer p {
     text-align: center;          
   }  
 
-  .dropdown {
-    float: none;
-    display: inline;
+  .dropdown-content a {
+    padding: 5px 10px;
   }
 
   #main-container {
-    padding-top: 0px;
+    padding-top: 10px;
   } 
     
   .main-section {
@@ -328,7 +308,7 @@ footer p {
   }
 
   .gif-div {
-    grid-auto-columns: 552px; 
+    grid-auto-columns: 536px; 
   }
 
   img {  

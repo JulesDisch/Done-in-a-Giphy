@@ -8,4 +8,4 @@ The user also has the option of adding more Yankees.
 The user can type in the name of any Yankee player in the input box, and click "Add a Yankee" to generate a button for that player. 
 If the user types the players name in lowercase letters, the produced button will show the player's name appropriately capitalized.
 You can find the deployed version here:
-https://julesdisch.github.io/Done-in-a-Giphy/index.html
+https://julesdisch.github.io/Done-in-a-Giphy/index.html.
