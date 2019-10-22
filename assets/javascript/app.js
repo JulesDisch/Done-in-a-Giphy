@@ -47,7 +47,7 @@ function renderTopic() {
         var goodArray = [];
         // Looping over every result item
         for (var i = 0; i < results.length; i++) {
-          if ((results[i].username === "mlb") || (results[i].username === "yankees") || (results[i].source_tld === "www.pinstripealley.com")) {
+          if ((results[i].username === "mlb") || ((results[i].username === "yankees") && (results[i].id !== "j3bqA6pJUF9K6LCyRU")) || (results[i].source_tld === "www.pinstripealley.com")) {
             // limit our subject-appropriate gifs to 10
             goodArray.push(results[i])
             if (goodArray.length === 11) {
