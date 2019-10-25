@@ -34,8 +34,7 @@ body {
   overflow: auto;
   padding: 20px;
   background-color: #043634;
-  border-color: #dddddd;
-  border: 1px solid;
+  border: 1px solid  #dddddd;
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
@@ -264,7 +263,6 @@ footer {
   z-index: 99;
   opacity: 0.9;
   background-color: #043634;
-  border-color: #cccccc;
   border-top:  2px  solid #cccccc;
 }
 
