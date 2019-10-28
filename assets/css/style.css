@@ -2,7 +2,9 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #777777;
-  background-color: #043634;
+}
+
+html {
   background-image: url("../../../Responsive-Portfolio/assets/images/another.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -24,9 +26,9 @@ body {
 }
     
 #main-container {
-  padding-top: 80px;
+  padding-top: 15%;
+  padding-bottom: 15%;
   height: 100%;
-  margin-bottom: 60px;
 } 
   
 .main-section {
@@ -210,7 +212,7 @@ hr {
   background-color: white;
   background-image: url("../images/blue.jpg");
   background-size: auto;
-  margin-top: 20px;
+  margin: 20px 0;
   max-width: 960px; 
   top: 125px;
 }
@@ -294,35 +296,54 @@ footer p {
 }
 
 @media screen and (max-width: 640px) { 
+  html{
+    height: auto;
+    min-height: 100%;
+  }
+  body {
+    position: relative;
+    min-height: 100%;
+  }
+
+  footer {
+    position: absolute;
+    width: auto;
+    opacity: 1;
+    border-radius: 0px;
+    text-align: center;
+    bottom: -8px;
+    right: -8px;
+    left: -8px;
+    height: 50px;
+  }
+
   header {
     position: static;
     width: auto;
     margin: -8px -8px 10px;
   }
 
-  footer {
-    position: static;
-    width: auto;
-    margin: auto -8px -8px;
-    opacity: 1;
-    border-radius: 0px;
-  }
-
   footer p {
-    padding-bottom: 8px;
+    padding: 18px 0;
   }
   
   #logo {
     width: 100%;
     margin-left: 0px;
     clear: both; 
+    height: 50px;
+    line-height: initial;
+    padding-top: 10px;
   }
 
   nav { 
     margin-left: 0px;
     clear: both; 
     float: none;   
-    text-align: center;          
+    text-align: center;  
+    height: 50px;  
+    line-height: initial;  
+    padding-top: 10px;    
   }  
 
   .dropdown-content a {
@@ -330,7 +351,7 @@ footer p {
   }
 
   #main-container {
-    padding-top: 10px;
+    padding-top: 50px;
   } 
     
   .main-section {
